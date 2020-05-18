@@ -1,0 +1,39 @@
+.button-box {
+    display: flex;
+    background: linear-gradient(90deg, ($cd-color-green)  0%, ($cd-color-green-hell) 50%);
+    box-shadow: 0px 0px 5px 1px rgba(0, 77, 0, 0.6), inset 0px 0px 3px 1px rgba(0, 77, 0, 0.2);
+    padding: 1.4rem;
+    border: solid 1px  rgb(46, 184, 46);
+    border-radius: 0.7rem;
+    margin: $button-margin;
+    font-size: 1.5rem;
+    font-family: $cd-font-master;
+    text-shadow: 1px 1px 3px (rgba(255, 255, 255, 0.3));
+    color: rgb(0, 77, 0);
+
+    &:hover {
+        color: white;
+        transform: $button-transform;
+    }
+}
+.button-box-zwei {
+    display: flex;
+    background: $cd-color-green-hell;
+    box-shadow:3px 3px 5px 1px rgba(0, 77, 0, 0.3);
+    border: solid 1px  rgb(46, 184, 46);
+    border-radius: 0.5rem;
+    margin: $button-margin;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: $cd-font-master;
+    line-height: 4rem;
+    text-shadow: 1px 1px 3px (rgba(255, 255, 255, 0.3));
+    color: rgb(0, 77, 0);
+
+    &:hover {
+        color: white;
+        transform: $button-transform;
+        background: $cd-color-green;
+    }
+}

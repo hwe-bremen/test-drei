@@ -1,0 +1,15 @@
+$cd-color-green: rgb(46, 184, 46);
+$cd-color-green-hell: rgb(51, 204, 51);
+$cd-color-green-dunkel: rgb(17, 153, 17);
+
+$cd-font-master: 'Vollkorn', serif;
+$cd-font-body: 'Lato', sans-serif;
+$h1-fontsize: calc(22px + (28 - 18) * (100vw - 400px) / (800 - 400));
+$body-fontsize: 1.2em;
+
+$button-transform: translate(3px, -3px) scaleX(1.02);
+$button-margin: 5% 3%;
+$button-kante: linear-gradient(135deg, rgba(46,184,46,1) 30%,rgba(51,204,51,1) 94%,rgba(51,204,51,0) 85%);
+$button-kante-schatten: linear-gradient(135deg,rgb(172, 172, 172) 30%,rgb(172, 172, 172) 94%,transparent 85%);
+
+

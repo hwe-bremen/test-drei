@@ -1,0 +1,89 @@
+.button-box {
+    background: linear-gradient(90deg, ($cd-color-green)  0%, ($cd-color-green-hell) 50%);
+    box-shadow: 0px 0px 5px 1px rgba(0, 77, 0, 0.6), inset 0px 0px 3px 1px rgba(0, 77, 0, 0.2);
+    padding: 1.4rem;
+    border: solid 1px  rgb(46, 184, 46);
+    border-radius: 0.7rem;
+    margin: $button-margin;
+    font-size: 1.5rem;
+    font-family: $cd-font-master;
+    text-shadow: 1px 1px 3px (rgba(255, 255, 255, 0.3));
+    color: rgb(0, 77, 0);
+
+    &:hover {
+        color: white;
+        transform: $button-transform;
+    }
+}
+.button-box-zwei {
+    background: $cd-color-green-hell;
+    box-shadow:3px 3px 5px 1px rgba(0, 77, 0, 0.3);
+    border: solid 1px  rgb(46, 184, 46);
+    border-radius: 0.5rem;
+    margin: $button-margin;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: $cd-font-master;
+    line-height: 4rem;
+    text-shadow: 1px 1px 3px (rgba(210, 248, 210, 0.8));
+    color: rgb(0, 77, 0);
+
+    &:hover {
+        color: white;
+        transform: $button-transform;
+        background: $cd-color-green;
+    }
+}
+.button-box-drei {
+    background: $cd-color-green-hell;
+    border: solid 1px $cd-color-green-dunkel;
+    border-radius: 0.5rem;
+    box-shadow:3px 3px 5px 1px rgba(0, 77, 0, 0.2);
+    margin: $button-margin;
+    padding: 0 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: $cd-font-body;
+    line-height: 3.5rem;
+    text-shadow: 2px 2px 4px (rgba(19, 17, 17, 0.4));
+    color: white;
+
+    &:hover {
+        color: white;
+        transform: $button-transform;
+        background: $cd-color-green;
+    }
+}
+.button-box-vier {
+    z-index: auto;
+    position: relative;
+    background: $button-kante;
+    margin: $button-margin;
+    padding: 0 0.7rem;
+    font-size: 110%;
+    font-weight: 600;
+    font-family: $cd-font-body;
+    line-height: 300%;
+    text-shadow: 2px 2px 4px (rgba(2, 2, 2, 0.3));
+    color: white;
+
+    &:hover {
+        z-index: 5  !important;
+        color: rgb(184, 241, 177);
+        transform: $button-transform;
+        background: $button-kante;
+    }
+
+    &::before { 
+        z-index: -5;
+        position: absolute;
+        content: "";
+        transform: translate(-0.5em, 0.15em);
+        filter: blur(2px);
+        background: $button-kante-schatten;
+        height: 100%;
+        width: 100%;
+    }
+}
+

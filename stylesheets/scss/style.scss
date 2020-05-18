@@ -1,0 +1,64 @@
+@import "variablen.scss";
+@import "button.scss";
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:rgb(217, 217, 217);
+    display: flex;
+    flex-direction: column;
+}
+.section_eins {
+    z-index: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 5% 5%;
+    background-color: white;
+    border-radius: 0.5rem;   
+}
+.button-position {
+    width: 100%;
+    margin-left: 2%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.head-eins {
+    width: 100%;
+    margin: 1.5rem 0 0 0;
+    padding: 0 5%;
+    font-family: $cd-font-master;
+    font-size: $h1-fontsize;
+
+    &.zwei   {
+        margin: 0.2em 0 0 0;
+        color: $cd-color-green-dunkel;
+        font-size: 3em;
+    }
+}
+.bodytext {
+    width: 100%;
+    font-family: $cd-font-body;
+    font-size: $body-fontsize;
+    margin: 5rem 0 0 0;
+    padding: 0 5%;
+
+    &.body_abstand {
+        margin-top: 2em;
+    }
+
+    &.bodyzwei {
+        color: green;
+        margin-top: 0.2em;
+        margin-bottom: 2em;
+        padding: 0 5%;
+        font-size: 2rem;
+    }
+}

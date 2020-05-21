@@ -127,3 +127,12 @@ body {
     margin-bottom: 2em;
     padding: 0 5%;
     font-size: 2rem; }
+
+.farbbox-green {
+  background-color: #2eb82e;
+  height: 5rem;
+  width: 5rem; }
+  .farbbox-green.zwei {
+    background-color: #33cc33; }
+  .farbbox-green.drei {
+    background-color: #119911; }

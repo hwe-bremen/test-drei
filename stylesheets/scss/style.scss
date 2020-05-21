@@ -62,3 +62,15 @@ body {
         font-size: 2rem;
     }
 }
+.farbbox-green {
+    background-color: $cd-color-green;
+    height: 5rem;
+    width: 5rem;
+
+   &.zwei {
+        background-color: $cd-color-green-hell;
+    }
+    &.drei {
+        background-color: $cd-color-green-dunkel;
+    }
+}

@@ -145,7 +145,8 @@ body {
   .head-eins.head_gestaltung {
     margin: 2rem 0;
     padding-left: 3rem;
-    border-left: solid 4px #2eb82e; }
+    border-left: solid 4px #2eb82e;
+    transform: translateX(-3.2rem); }
 
 .bodytext {
   margin: 5rem 0 0 0;

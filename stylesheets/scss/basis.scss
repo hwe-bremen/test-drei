@@ -1,0 +1,30 @@
+.button-position {
+    width: 100%;
+    margin-left: 2%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    &.basicstyle {
+        margin-left:5%;
+        margin-bottom: 3rem;
+    }
+    &.satzspiegel_schmal {
+        width: 80%;
+    }
+}
+.farbbox-green {
+    background-color: $cd-color-green;
+    margin-right: 7%;
+    padding: 0.5rem;
+    height: 6rem;
+    width: 6rem;
+
+   &.middle-green {
+        background-color: $cd-color-green-hell;
+    }
+    &.dark-green {
+        background-color: $cd-color-green-dunkel;
+    }
+}

@@ -1,10 +1,26 @@
 @import "variablen.scss";
 @import "button.scss";
+@import "basis.scss";
 
 
 
 * {
     box-sizing: border-box;
+}
+span {
+    font-family: $cd-font-body;
+    font-size: $body-fontsize;
+
+    &.width-100 {
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    &.zeilenhoehe {
+        line-height: 2rem;
+    }
+    &.body_satzspiegel {
+        padding-left: 3rem;
+    }
 }
 
 body {
@@ -22,55 +38,51 @@ body {
     background-color: white;
     border-radius: 0.5rem;   
 }
-.button-position {
-    width: 100%;
-    margin-left: 2%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
 .head-eins {
     width: 100%;
     margin: 1.5rem 0 0 0;
     padding: 0 5%;
     font-family: $cd-font-master;
     font-size: $h1-fontsize;
+    font-weight: 400 !important;
 
     &.zwei   {
         margin: 0.2em 0 0 0;
         color: $cd-color-green-dunkel;
         font-size: 3em;
     }
+    &.head_zeilenhoehe {
+        line-height: 4rem;
+    }
+    &.head_gestaltung {
+        margin: 2rem 0;
+        padding-left: 3rem;
+        border-left: solid 4px $cd-color-green;
+    }
 }
+
 .bodytext {
-    width: 100%;
-    font-family: $cd-font-body;
-    font-size: $body-fontsize;
     margin: 5rem 0 0 0;
     padding: 0 5%;
 
     &.body_abstand {
         margin-top: 2em;
     }
-
-    &.bodyzwei {
+    &.bodygreen {
+        width: 100%;
         color: green;
         margin-top: 0.2em;
         margin-bottom: 2em;
         padding: 0 5%;
         font-size: 2rem;
     }
-}
-.farbbox-green {
-    background-color: $cd-color-green;
-    height: 5rem;
-    width: 5rem;
-
-   &.zwei {
-        background-color: $cd-color-green-hell;
+    &.fett {
+        margin: 0;
+        font-weight: 900;
+        padding: 0;
     }
-    &.drei {
-        background-color: $cd-color-green-dunkel;
+    &.small {
+        font-size: 0.8em;
+        color: white;
     }
 }

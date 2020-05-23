@@ -1,6 +1,7 @@
 @import "variablen.scss";
 @import "button.scss";
 @import "basis.scss";
+@import "card.scss";
 
 
 
@@ -85,5 +86,9 @@ body {
     &.small {
         font-size: 0.8em;
         color: white;
+    }
+    &.body_left_abstand {
+        margin: 7% 0 3% 5.3%;
+
     }
 }

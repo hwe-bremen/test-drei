@@ -32,7 +32,7 @@
     background: #2eb82e; }
 
 .button-box-drei {
-  background: #33cc33;
+  background: #2eb82e;
   border: solid 1px #119911;
   border-radius: 0.5rem;
   box-shadow: 3px 3px 5px 1px rgba(0, 77, 0, 0.2);
@@ -48,6 +48,10 @@
     color: white;
     transform: translate(3px, -3px) scaleX(1.02);
     background: #2eb82e; }
+  .button-box-drei.card_buttom {
+    margin: 15% 1% 5% 0;
+    max-width: 165px;
+    float: right; }
 
 .button-box-vier {
   z-index: auto;
@@ -99,6 +103,36 @@
     background-color: #33cc33; }
   .farbbox-green.dark-green {
     background-color: #119911; }
+
+.card-position {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 1% 0 5% 5%; }
+
+.card {
+  display: flex;
+  margin: 0 2em 2em 0;
+  flex-wrap: wrap;
+  max-width: 600px;
+  flex: 1 1 calc(950px * 999 - 100% * 999);
+  border: solid 1px black;
+  background-color: #ddddddef; }
+  .card:nth-child(1) {
+    border-radius: 0.8em; }
+
+.card > * {
+  flex: 1 1 300px;
+  margin: 0.5em; }
+
+.card_image {
+  min-height: 250px;
+  background-color: #119911; }
+  .card_image.image_eins {
+    border-radius: 0.6em; }
+
+.card_content {
+  padding: 0.2em; }
 
 * {
   box-sizing: border-box; }
@@ -167,3 +201,5 @@ body {
   .bodytext.small {
     font-size: 0.8em;
     color: white; }
+  .bodytext.body_left_abstand {
+    margin: 7% 0 3% 5.3%; }

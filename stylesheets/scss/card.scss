@@ -1,0 +1,35 @@
+.card-position {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 1% 0 5% 5%;
+}
+.card {
+    display: flex;
+    margin: 0 2em 2em 0;
+    flex-wrap: wrap;
+   max-width: 600px;
+    flex: 1 1 calc(950px * 999 - 100% * 999);
+    border: solid 1px black;
+    background-color: #ddddddef;
+
+    &:nth-child(1) {
+        border-radius: 0.8em;
+    }
+}
+.card > * {
+    flex: 1 1 300px;
+    margin: 0.5em;
+}
+.card_image {
+    min-height: 250px;
+    background-color: $cd-color-green-dunkel;
+
+    &.image_eins {
+        border-radius: 0.6em;
+    }
+}
+.card_content {
+    padding: 0.2em;
+
+}

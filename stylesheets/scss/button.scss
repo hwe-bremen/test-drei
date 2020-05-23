@@ -36,7 +36,7 @@
     }
 }
 .button-box-drei {
-    background: $cd-color-green-hell;
+    background: $cd-color-green;
     border: solid 1px $cd-color-green-dunkel;
     border-radius: 0.5rem;
     box-shadow:3px 3px 5px 1px rgba(0, 77, 0, 0.2);
@@ -53,6 +53,12 @@
         color: white;
         transform: $button-transform;
         background: $cd-color-green;
+    }
+    &.card_buttom {
+        margin: 15% 1% 5% 0;
+        max-width: 165px;
+        float: right;
+
     }
 }
 .button-box-vier {

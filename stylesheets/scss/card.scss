@@ -6,9 +6,9 @@
 }
 .card {
     display: flex;
-    margin: 0 2em 2em 0;
+    margin: 0 3.5% 2em 0;
     flex-wrap: wrap;
-   max-width: 600px;
+    max-width: 500px;
     flex: 1 1 calc(950px * 999 - 100% * 999);
     border: solid 1px black;
     background-color: #ddddddef;

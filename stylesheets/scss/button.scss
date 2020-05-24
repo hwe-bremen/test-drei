@@ -62,7 +62,13 @@
         margin: 10% 1% 5% 0;
         max-width: 170px;
         float: right;
-
+    }
+    &.card_buttom_zwei {
+        margin: 10% 1% 5% 0;
+        max-width: 150px;
+        float: right;
+        font-size: 0.9rem;
+        box-shadow:3px 3px 5px 1px rgba(0, 77, 0, 0.5);
     }
 }
 .button-box-vier {

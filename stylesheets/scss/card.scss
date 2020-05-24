@@ -28,19 +28,37 @@
             margin: 0em;
 
              &.card_content {
-                margin: 1.5rem 0.3rem 0 0.3rem;
+                margin: 0.8rem 0.3rem 0 0.3rem;
                 line-height: 1.2;  
+            }
+
+            &.card_image {
+               border-bottom: solid 0.6em white;  
             }
 
             &.card_content::first-letter {
                 font-size: 2.7em; 
-                letter-spacing: 0;
+                letter-spacing: 0.5rem;
                 font-family: $cd-font-master; 
                 float: left;
-                margin: 7px 5px 0 0;
-                line-height: 0.8;       
+                margin: 7px 5px -3px 0;
+                line-height: 0.8; 
+                color: $cd-color-green-dunkel;      
             }
-        }  
+        } 
+    }
+    &:nth-child(3) {
+        background-color: white;
+        border: 0;
+
+        &.card > * {
+            margin: 0;
+
+            &.card_content {
+                margin-top: 0.8rem;
+                line-height: 1.2;  
+            }
+        }
     }
 }
 .card > * {
@@ -54,8 +72,13 @@
     &.image_eins {
         border-radius: 0.6em;
     }
+
 }
 .card_content {
     padding: 0.2em;
+
+    &.card-border {
+        border-bottom: solid 2px $cd-color-green-dunkel;
+    }
 
 }

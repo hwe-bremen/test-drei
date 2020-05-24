@@ -49,13 +49,17 @@
     text-shadow: 2px 2px 4px (rgba(19, 17, 17, 0.4));
     color: white;
 
+    &.kante {
+        border-radius: unset;
+    }
+
     &:hover {
         color: white;
         transform: $button-transform;
         background: $cd-color-green;
     }
     &.card_buttom {
-        margin: 15% 1% 5% 0;
+        margin: 10% 1% 5% 0;
         max-width: 170px;
         float: right;
 
@@ -76,7 +80,7 @@
 
     &:hover {
         z-index: 5  !important;
-        color: rgb(184, 241, 177);
+        color:white;
         transform: $button-transform;
         background: $button-kante;
     }

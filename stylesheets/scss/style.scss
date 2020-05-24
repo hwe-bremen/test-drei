@@ -21,6 +21,16 @@ span {
     }
     &.body_satzspiegel {
         padding-left: 3rem;
+
+        @media screen and (max-width:500px) {
+            padding-left: 0;
+         }
+    }
+    &.versalien {
+        text-transform: $cd_body_versalien;
+    }
+    &.fett {
+        font-weight: 900;
     }
 }
 
@@ -37,7 +47,11 @@ body {
     align-items: flex-start;
     margin: 5% 5%;
     background-color: white;
-    border-radius: 0.5rem;   
+    border-radius: 0.5rem; 
+    
+    @media screen and (max-width:600px) {
+        margin: 2% 0;  
+    }
 }
 .head-eins {
     width: 100%;
@@ -60,7 +74,16 @@ body {
         padding-left: 3rem;
         border-left: solid 4px $cd-color-green;
         transform: translateX(-3.2rem);
+
+        @media screen and (max-width:500px) {
+            transform: translateX(0);
+         }
     }
+}
+
+.border_dotted {
+    border-bottom: dotted 2px black;
+    padding-bottom: 1.5rem;
 }
 
 .bodytext {
@@ -74,7 +97,7 @@ body {
         width: 100%;
         color: green;
         margin-top: 0.2em;
-        margin-bottom: 2em;
+        margin-bottom: 4em;
         padding: 0 5%;
         font-size: 2rem;
     }
@@ -89,6 +112,8 @@ body {
     }
     &.body_left_abstand {
         margin: 7% 0 3% 5.3%;
-
+    }
+    &.versalien {
+        text-transform: $cd_body_versalien;
     }
 }

@@ -33,7 +33,7 @@
 
 .button-box-drei {
   background: #2eb82e;
-  border: solid 1px #119911;
+  border: solid 1px #0e810e;
   border-radius: 0.5rem;
   box-shadow: 3px 3px 5px 1px rgba(0, 77, 0, 0.2);
   margin: 5% 3%;
@@ -44,12 +44,14 @@
   line-height: 3.5rem;
   text-shadow: 2px 2px 4px rgba(19, 17, 17, 0.4);
   color: white; }
+  .button-box-drei.kante {
+    border-radius: unset; }
   .button-box-drei:hover {
     color: white;
     transform: translate(3px, -3px) scaleX(1.02);
     background: #2eb82e; }
   .button-box-drei.card_buttom {
-    margin: 15% 1% 5% 0;
+    margin: 10% 1% 5% 0;
     max-width: 170px;
     float: right; }
 
@@ -67,7 +69,7 @@
   color: white; }
   .button-box-vier:hover {
     z-index: 5  !important;
-    color: #b8f1b1;
+    color: white;
     transform: translate(3px, -3px) scaleX(1.02);
     background: linear-gradient(135deg, #2eb82e 30%, #33cc33 94%, rgba(51, 204, 51, 0) 85%); }
   .button-box-vier::before {
@@ -76,7 +78,7 @@
     content: "";
     transform: translate(-0.5em, 0.15em);
     filter: blur(2px);
-    background: linear-gradient(135deg, #acacac 30%, #acacac 94%, transparent 85%);
+    background: linear-gradient(135deg, #0e810e 30%, #0e810e 94%, transparent 85%);
     height: 100%;
     width: 100%; }
 
@@ -89,10 +91,16 @@
   align-items: flex-start; }
   .button-position.basicstyle {
     margin-left: 5%;
-    margin-bottom: 3rem; }
+    margin-bottom: 8rem; }
   .button-position.satzspiegel_schmal {
     width: 80%; }
-
+    @media screen and (max-width: 300px) {
+      .button-position.satzspiegel_schmal {
+        width: 100%; } }
+  @media screen and (max-width: 600px) {
+    .button-position {
+      width: 100%;
+      margin: 0; } }
 .farbbox-green {
   background-color: #2eb82e;
   margin-right: 7%;
@@ -102,14 +110,16 @@
   .farbbox-green.middle-green {
     background-color: #33cc33; }
   .farbbox-green.dark-green {
-    background-color: #119911; }
+    background-color: #0e810e; }
 
 .card-position {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   margin: 1% 0 5% 5%; }
-
+  @media screen and (max-width: 400px) {
+    .card-position {
+      margin: 0; } }
 .card {
   display: flex;
   margin: 0 3.5% 2em 0;
@@ -117,17 +127,31 @@
   max-width: 500px;
   flex: 1 1 calc(950px * 999 - 100% * 999);
   border: solid 1px black;
-  background-color: #ddddddef; }
+  background-color: whitesmoke; }
   .card:nth-child(1) {
     border-radius: 0.8em; }
+  .card:nth-child(2) {
+    border: 0; }
+    .card:nth-child(2).card > * {
+      margin: 0em; }
+      .card:nth-child(2).card > *.card_content {
+        margin: 1.5rem 0.3rem 0 0.3rem;
+        line-height: 1.2; }
+      .card:nth-child(2).card > *.card_content::first-letter {
+        font-size: 2.7em;
+        letter-spacing: 0;
+        font-family: "Vollkorn", serif;
+        float: left;
+        margin: 7px 5px 0 0;
+        line-height: 0.8; }
 
 .card > * {
   flex: 1 1 300px;
-  margin: 0.5em; }
+  margin: 0.6em; }
 
 .card_image {
   min-height: 250px;
-  background-color: #119911; }
+  background-color: #0e810e; }
   .card_image.image_eins {
     border-radius: 0.6em; }
 
@@ -147,6 +171,13 @@ span {
     line-height: 2rem; }
   span.body_satzspiegel {
     padding-left: 3rem; }
+    @media screen and (max-width: 500px) {
+      span.body_satzspiegel {
+        padding-left: 0; } }
+  span.versalien {
+    text-transform: uppercase; }
+  span.fett {
+    font-weight: 900; }
 
 body {
   background-color: #d9d9d9;
@@ -162,7 +193,9 @@ body {
   margin: 5% 5%;
   background-color: white;
   border-radius: 0.5rem; }
-
+  @media screen and (max-width: 600px) {
+    .section_eins {
+      margin: 2% 0; } }
 .head-eins {
   width: 100%;
   margin: 1.5rem 0 0 0;
@@ -172,7 +205,7 @@ body {
   font-weight: 400 !important; }
   .head-eins.zwei {
     margin: 0.2em 0 0 0;
-    color: #119911;
+    color: #0e810e;
     font-size: 3em; }
   .head-eins.head_zeilenhoehe {
     line-height: 4rem; }
@@ -181,6 +214,12 @@ body {
     padding-left: 3rem;
     border-left: solid 4px #2eb82e;
     transform: translateX(-3.2rem); }
+    @media screen and (max-width: 500px) {
+      .head-eins.head_gestaltung {
+        transform: translateX(0); } }
+.border_dotted {
+  border-bottom: dotted 2px black;
+  padding-bottom: 1.5rem; }
 
 .bodytext {
   margin: 5rem 0 0 0;
@@ -191,7 +230,7 @@ body {
     width: 100%;
     color: green;
     margin-top: 0.2em;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
     padding: 0 5%;
     font-size: 2rem; }
   .bodytext.fett {
@@ -203,3 +242,5 @@ body {
     color: white; }
   .bodytext.body_left_abstand {
     margin: 7% 0 3% 5.3%; }
+  .bodytext.versalien {
+    text-transform: uppercase; }

@@ -3,6 +3,11 @@
     flex-wrap: wrap;
     width: 100%;
     margin: 1% 0 5% 5%;
+
+
+    @media screen and (max-width:400px) {
+       margin: 0; 
+     }
 }
 .card {
     display: flex;
@@ -11,15 +16,36 @@
     max-width: 500px;
     flex: 1 1 calc(950px * 999 - 100% * 999);
     border: solid 1px black;
-    background-color: #ddddddef;
+    background-color: $cd-color-grau-hell;
 
     &:nth-child(1) {
         border-radius: 0.8em;
     }
+    &:nth-child(2) {
+        border: 0;
+
+       &.card > * {
+            margin: 0em;
+
+             &.card_content {
+                margin: 1.5rem 0.3rem 0 0.3rem;
+                line-height: 1.2;  
+            }
+
+            &.card_content::first-letter {
+                font-size: 2.7em; 
+                letter-spacing: 0;
+                font-family: $cd-font-master; 
+                float: left;
+                margin: 7px 5px 0 0;
+                line-height: 0.8;       
+            }
+        }  
+    }
 }
 .card > * {
     flex: 1 1 300px;
-    margin: 0.5em;
+    margin: 0.6em;
 }
 .card_image {
     min-height: 250px;

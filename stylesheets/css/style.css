@@ -46,6 +46,9 @@
   color: white; }
   .button-box-drei.kante {
     border-radius: unset; }
+  .button-box-drei.kante_bottum {
+    margin: 0;
+    box-shadow: none; }
   .button-box-drei:hover {
     color: white;
     transform: translate(3px, -3px) scaleX(1.02);

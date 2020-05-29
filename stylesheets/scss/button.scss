@@ -113,7 +113,7 @@
 
 .button-position--abstand {
     display: flex;
-    margin: 5% 0 5% 5%;
+    margin: 0 0 0 2%;
     width: 100%;
     flex-flow: row wrap;
     justify-content: flex-start;
@@ -121,14 +121,16 @@
 }
 
 .button-final {
-    flex: 1 auto 150px;
+    flex: 1 auto 200px;
     border: solid 4px $cd-color-green-dunkel;
     border-radius: 0.5rem;
     background-color: white;
     font-size: 1rem;
     font-family: $cd-font-master;
-    line-height: 3.5rem;
+    text-align: center;
+    line-height: 4rem;
     margin: $button-margin;
     padding: 0 2% 0 2%;
+    box-shadow: $button-final--shadow;
 }
 

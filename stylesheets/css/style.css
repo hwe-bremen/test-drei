@@ -48,7 +48,9 @@
     border-radius: unset; }
   .button-box-drei.kante_bottum {
     margin: 0;
-    box-shadow: none; }
+    box-shadow: none;
+    text-align: center;
+    align-self: flex-end; }
   .button-box-drei:hover {
     color: white;
     transform: translate(3px, -3px) scaleX(1.02);
@@ -91,6 +93,24 @@
     background: linear-gradient(135deg, #0e810e 30%, #0e810e 94%, transparent 85%);
     height: 100%;
     width: 100%; }
+
+.button-position--abstand {
+  display: flex;
+  margin: 5% 0 5% 5%;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: flex-start; }
+
+.button-final {
+  flex: 1 auto 150px;
+  border: solid 4px #0e810e;
+  border-radius: 0.5rem;
+  background-color: white;
+  font-size: 1rem;
+  font-family: "Vollkorn", serif;
+  line-height: 3.5rem;
+  margin: 5% 3%;
+  padding: 0 2% 0 2%; }
 
 .button-position {
   width: 100%;
